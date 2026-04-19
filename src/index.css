@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #f7f5f2; /* Soft Sand Base */
+  color: #0f1c15; /* Deep Forest Text */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom Design Tokens */
+@theme {
+  --color-garden-dark: #0f1c15;
+  --color-garden-olive: #3d4a36;
+  --color-garden-earth: #8b7e66;
+  --color-garden-stone: #e5e1d8;
+  --color-garden-accent: #d4a373; /* Brightened Gold */
+  
+  --font-display: "Playfair Display", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-garden-dark bg-[#f7f5f2];
+  }
+  h1, h2, h3, .font-display {
+    @apply font-display tracking-tight;
+  }
+}
+
+.organic-shape {
+  border-radius: 64% 36% 41% 59% / 54% 46% 54% 46%;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
