@@ -17,14 +17,6 @@ const fadeIn = {
   transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
 };
 
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-
 const SectionHeading = ({ title, subtitle, light = false }: { title: string, subtitle: string, light?: boolean }) => (
   <motion.div 
     initial="initial"
